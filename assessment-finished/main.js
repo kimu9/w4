@@ -23,6 +23,7 @@ function result() {
   const zItem = randomValueFromArray(insertZ);
 
   newStory = newStory.replace(':insertx:',xItem);
+  newStory = newStory.replace(':insertx:',xItem);
   newStory = newStory.replace(':inserty:',xItem);
   newStory = newStory.replace(':inserty:',yItem);
   newStory = newStory.replace(':insertz:',zItem);
@@ -32,9 +33,9 @@ function result() {
     newStory = newStory.replace('Bob', name);
   }
 
-  if (document.getElementById("ja").checked) {
-    const weight = `${Math.round(300*0.0714286)} stone`;
-    const temperature =  `${Math.round((94-32) * 5 / 9)} centigrade`;
+  if (document.getElementById("us").checked) {
+    const weight = `${Math.round(300*0.0714286)} ポンド`;
+    const temperature =  `摂氏${Math.round((94-32) * 5 / 9)} `;
     newStory = newStory.replace('華氏40度', temperature);
     newStory = newStory.replace('50kg', weight);
   }
