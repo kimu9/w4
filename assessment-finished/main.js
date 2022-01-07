@@ -23,8 +23,8 @@ function result() {
   const zItem = randomValueFromArray(insertZ);
 
   newStory = newStory.replace(':insertx:',xItem);
-  newStory = newStory.replace(':inserty:',xItem);
-  newStory = newStory.replace(':insertx:',zItem);
+  newStory = newStory.replace(':insertx:',xItem);
+  newStory = newStory.replace(':inserty:',zItem);
   newStory = newStory.replace(':inserty:',xItem);
   newStory = newStory.replace(':insertz:',yItem);
 
@@ -34,10 +34,10 @@ function result() {
   }
 
   if (document.getElementById("us").checked) {
-    const weight = `${Math.round(300*0.0714286)} ポンド`;
-    const temperature =  `${Math.round((94-32) * 5 / 9)} `;
+    const weight = `${Math.round(300*0.0714286)} kg`;
+    const temperature =  `摂氏${Math.round((94-32) * 5 / 9)} `;
     newStory = newStory.replace('華氏40', temperature);
-    newStory = newStory.replace('50kg', weight);
+    newStory = newStory.replace('300ポンド', weight);
   }
 
   story.textContent = newStory;
