@@ -8,7 +8,7 @@ function randomValueFromArray(array){
 }
 
 //const storyText = 'その日は、とても暑かった。 so :insertx: went for a walk. When they got to :inserty:, they stared in horror for a few moments, then :insertz:. Bob saw the whole thing, but was not surprised — :insertx: weighs 300 pounds, and it was a hot day.';
-const storyText = '気温華氏40度で外は寒かった。:insertx:は出かけた。:inserty:に着いた。:insertz:。体重300ポンドの :insertx:は驚いたが、Bobは驚かなかった。';
+const storyText = '気温華氏40度で外は寒かった。:insertx:は出かけた。:inserty:に着いた。:insertz:。体重110ポンドの :insertx:は驚いたが、Bobは驚かなかった。';
 const insertX = ['スヌーピー', 'ミッキーマウス', 'サンタクロース'];
 const insertY = ['ディズニーランド', '千駄ヶ谷', '津田塾大学'];
 const insertZ = ['雪が降っていた', '混雑していた', '雨が降っていた'];
@@ -36,7 +36,7 @@ function result() {
     const weight = `${Math.round(300*0.0714286)} kg`;
     const temperature =  `摂氏${Math.round((94-32) * 5 / 9)} `;
     newStory = newStory.replace('華氏40', temperature);
-    newStory = newStory.replace('300ポンド', weight);
+    newStory = newStory.replace('110ポンド', weight);
   }
 
   story.textContent = newStory;
