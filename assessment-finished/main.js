@@ -34,7 +34,7 @@ function result() {
   }
 
   if (document.getElementById("ja").checked) {
-    const weight = `${Math.round(300*0.453592)}kg`;
+    const weight = `${Math.round(110*0.453592)}kg`;
     const temperature =  `摂氏${Math.round((40-32) * 5 / 9)} `;
     newStory = newStory.replace('華氏40', temperature);
     newStory = newStory.replace('110ポンド', weight);
